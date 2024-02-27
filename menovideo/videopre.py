@@ -9,7 +9,7 @@ from torch.utils.data import Dataset, DataLoader
 
 def capture(filename,timesep,rgb,h,w):
     tmp = []
-    frames = np.zeros((timesep,rgb,h,w), dtype=np.float)
+    frames = np.zeros((timesep,rgb,h,w), dtype=float)
     i=0
     vc = cv2.VideoCapture(filename)
     if vc.isOpened():
